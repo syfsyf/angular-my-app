@@ -11,6 +11,13 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
 
+  // it('test',async(()=>{
+  //   const fixture=TestBed.createComponent(AppComponent);
+  //   const app:AppComponent=fixture.debugElement.componentInstance;
+  //   //expect(app.title).toEqual('');
+  //
+  // }));
+
   it('should create the app', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
@@ -20,13 +27,13 @@ describe('AppComponent', () => {
   it(`should have as title 'app'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app');
+    expect(app.title).toEqual('My First angular app');
   }));
 
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to My First angular app!');
   }));
 });
