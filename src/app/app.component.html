@@ -4,18 +4,11 @@
     {{title}}
   </h1>
 
-  <hero-list [heroes]="heroes" [selectedHero]="selectedHero" (onSelect)="onSelect($event)"  ></hero-list>
-  <!-- <div>
-    <ul class="heroes">
-      <li
-        *ngFor="let hero of heroes"
-        (click)="onSelect(hero)"
-        [class.selected]="hero === selectedHero"
-        >
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
-      </li>
-    </ul>
-  </div> -->
+  <div *ngIf="!heroes">
+      ladowanie...
+  </div>
+
+  <hero-list [heroes]="heroes" [selectedHero]="selectedHero" (onSelect)="onSelect($event)"></hero-list>
 
 <hero-detail [hero]="selectedHero"></hero-detail>
 
