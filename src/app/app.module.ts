@@ -13,6 +13,8 @@ import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroListComponent} from './hero-list.component';
 import { DashboardComponent} from './dashboard.component';
+import { D3DemoComponent} from './d3-demo.component';
+import { BarGraph } from './bar-graph';
 
 
 
@@ -25,11 +27,13 @@ import { DashboardComponent} from './dashboard.component';
     HeroDetailComponent,
     HeroListComponent,
     DashboardComponent,
+    D3DemoComponent,
+    BarGraph,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,    
+    AppRoutingModule,
   ],
   providers: [HeroService],
   bootstrap: [AppComponent],
