@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div >  
+  <div *ngIf="!heroes">
+      ladowanie...
+  </div>
+
+  <hero-list [heroes]="heroes" [selectedHero]="selectedHero" (onSelect)="onSelect($event)"></hero-list>
+
+<hero-detail [hero]="selectedHero"></hero-detail>
+
+</div>

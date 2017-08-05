@@ -4,6 +4,7 @@
     (click)="onSelect.emit(hero)"
     [class.selected]="hero === selectedHero"
     >
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
+    <span class="badge">{{hero.id}}</span> {{hero.name}} <a routerLink="/detail/{{hero.id}}">edit</a>
+
   </li>
 </ul>
